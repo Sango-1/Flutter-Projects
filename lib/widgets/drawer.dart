@@ -10,14 +10,14 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.deepPurple,
+        color: Colors.white,
         child: ListView(
           children: [
             DrawerHeader(
               padding: EdgeInsets.zero,
               margin: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
-                  decoration: BoxDecoration(color: Colors.deepPurple),
+                  decoration: BoxDecoration(color: Colors.white),
                   accountName: Text("Atul Sangwan"),
                   accountEmail: Text("atulsangwan1997@gmail.com"),
                   currentAccountPicture: CircleAvatar(
@@ -28,39 +28,39 @@ class MyDrawer extends StatelessWidget {
               leading: Icon(
                 Icons.home,
                 size: 30,
-                color: Colors.white,
+                color: Colors.blue,
               ),
               title: Text(
                 "Home",
-                style: TextStyle(fontSize: 20, color: Colors.white),
+                style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
             ListTile(
               leading: Icon(
                 Icons.person,
                 size: 30,
-                color: Colors.white,
+                color: Colors.blue,
               ),
               title: Text(
                 "Profile",
-                style: TextStyle(fontSize: 20, color: Colors.white),
+                style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
             ListTile(
               leading: Icon(
                 Icons.email,
                 size: 30,
-                color: Colors.white,
+                color: Colors.blue,
               ),
               title: Text(
                 "Email",
-                style: TextStyle(fontSize: 20, color: Colors.white),
+                style: TextStyle(fontSize: 20, color: Colors.black),
               ),
             ),
           ],
         ),
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
     );
   }
 }
